@@ -14,6 +14,8 @@
 		5D41AC871EAB183500D1C602 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D41AC851EAB183500D1C602 /* LaunchScreen.storyboard */; };
 		5D41AC921EAB183500D1C602 /* GK_NhaHangTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D41AC911EAB183500D1C602 /* GK_NhaHangTests.swift */; };
 		5D41AC9D1EAB183500D1C602 /* GK_NhaHangUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D41AC9C1EAB183500D1C602 /* GK_NhaHangUITests.swift */; };
+		5D41ACB41EAB193B00D1C602 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D41ACB31EAB193B00D1C602 /* libsqlite3.tbd */; };
+		5DB3825D1EAE49F500E9F1C6 /* BanAn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB3825C1EAE49F500E9F1C6 /* BanAn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		5D41AC981EAB183500D1C602 /* GK_NhaHangUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GK_NhaHangUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D41AC9C1EAB183500D1C602 /* GK_NhaHangUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GK_NhaHangUITests.swift; sourceTree = "<group>"; };
 		5D41AC9E1EAB183500D1C602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D41ACB31EAB193B00D1C602 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		5DB3825C1EAE49F500E9F1C6 /* BanAn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanAn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D41ACB41EAB193B00D1C602 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,10 +83,10 @@
 			isa = PBXGroup;
 			children = (
 				5D41AC7B1EAB183500D1C602 /* GK_NhaHang */,
-				5D41ACAB1EAB184700D1C602 /* New Group */,
 				5D41AC901EAB183500D1C602 /* GK_NhaHangTests */,
 				5D41AC9B1EAB183500D1C602 /* GK_NhaHangUITests */,
 				5D41AC7A1EAB183500D1C602 /* Products */,
+				5D41ACB21EAB193A00D1C602 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +103,7 @@
 		5D41AC7B1EAB183500D1C602 /* GK_NhaHang */ = {
 			isa = PBXGroup;
 			children = (
+				5D41ACAD1EAB188600D1C602 /* Model */,
 				5D41ACAA1EAB183C00D1C602 /* DB */,
 				5D41AC7C1EAB183500D1C602 /* AppDelegate.swift */,
 				5D41AC7E1EAB183500D1C602 /* ViewController.swift */,
@@ -134,11 +140,20 @@
 			name = DB;
 			sourceTree = "<group>";
 		};
-		5D41ACAB1EAB184700D1C602 /* New Group */ = {
+		5D41ACAD1EAB188600D1C602 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5DB3825C1EAE49F500E9F1C6 /* BanAn.swift */,
 			);
-			name = "New Group";
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5D41ACB21EAB193A00D1C602 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D41ACB31EAB193B00D1C602 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D41AC7F1EAB183500D1C602 /* ViewController.swift in Sources */,
+				5DB3825D1EAE49F500E9F1C6 /* BanAn.swift in Sources */,
 				5D41AC7D1EAB183500D1C602 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +537,7 @@
 				5D41ACA31EAB183500D1C602 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D41ACA41EAB183500D1C602 /* Build configuration list for PBXNativeTarget "GK_NhaHangTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +546,7 @@
 				5D41ACA61EAB183500D1C602 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D41ACA71EAB183500D1C602 /* Build configuration list for PBXNativeTarget "GK_NhaHangUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +555,7 @@
 				5D41ACA91EAB183500D1C602 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
